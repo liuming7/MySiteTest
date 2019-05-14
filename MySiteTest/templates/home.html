@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="jumbotron">
+    <h1>My Machine Learning Site <small>powered by sklearn</small></h1>
+</div>
+
+<div class="row">
+    <div class="col-md-3">
+        <h2>Datasets -></h2>
+        <p>Datasets</p>
+        <p><a class="btn btn-default" href="{{ url_for('datasets') }}">Datasets</a></p>
+    </div>
+
+    <div class="col-md-3">
+        <h2>Training -></h2>
+        <p>Training</p>
+        <p><a class="btn btn-default" href="{{ url_for('training') }}">Training</a></p>
+    </div>
+
+    <div class="col-md-3">
+        <h2>Visualization -></h2>
+        <p>Visualization</p>
+        <p><a class="btn btn-default" href="{{ url_for('visualization') }}">Visualization</a></p>
+    </div>
+
+    <div class="col-md-3">
+        <h2>Test \^o^/</h2>
+        <p>Test</p>
+        <p><a class="btn btn-default" href="{{ url_for('test') }}">Test</a></p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <h2>Browser</h2>
+        <p>Browser</p>
+        <p><a class="btn btn-default" href="{{ url_for('browser') }}">Browser</a></p>
+    </div>
+
+    <div class="col-md-6">
+        <h2>About</h2>
+        <p>About</p>
+        <p><a class="btn btn-default" href="{{ url_for('about') }}">About</a></p>
+    </div>
+</div>
+
+{% endblock %}
